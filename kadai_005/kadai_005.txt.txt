@@ -1,0 +1,38 @@
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/LEOle/git_challenge/.git/
+
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge (main)
+$ echo "Hello,World!" > hello_world.txt
+
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge (main)
+$ cat hello_world.txt
+Hello,World!
+
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge (main)
+$ git commit -m "Add hello_world.txt"
+[main (root-commit) 6194491] Add hello_world.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge (main)
+$ echo "こんにちは、世界！" >> hello_world.txt
+
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge (main)
+$ git commit -m "Add hello_world.txt"
+[main b524897] Add hello_world.txt
+ 1 file changed, 1 insertion(+)
+
+LEOle@LAPTOP-BMJ3EG9P MINGW64 ~/git_challenge (main)
+$ git log --oneline -- hello_world.txt
+b524897 (HEAD -> main) Add hello_world.txt
+6194491 Add hello_world.txt
+
